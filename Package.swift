@@ -3,18 +3,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "truncate.swift",
+    name: "truncate",
     products: [
         .library(
-            name: "truncate.swift",
-            targets: ["truncate.swift"]),
+            name: "truncate",
+            targets: ["truncate"]),
     ],
     targets: [
         .target(
-            name: "truncate.swift",
+            name: "truncate",
             dependencies: []),
         .testTarget(
-            name: "truncate.swiftTests",
-            dependencies: ["truncate.swift"]),
+            name: "truncateTests",
+            dependencies: ["truncate"]),
     ]
 )
