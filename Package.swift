@@ -1,13 +1,20 @@
-//
-//  Package.swift
-//  Truncate
-//
-//  Created by Andrew McKnight on 3/27/16.
-//  Copyright © 2016 Two Ring Software. All rights reserved.
-//
+// swift-tools-version:4.0
 
 import PackageDescription
 
 let package = Package(
-    name:  "Truncate"
+    name: "truncate.swift",
+    products: [
+        .library(
+            name: "truncate.swift",
+            targets: ["truncate.swift"]),
+    ],
+    targets: [
+        .target(
+            name: "truncate.swift",
+            dependencies: []),
+        .testTarget(
+            name: "truncate.swiftTests",
+            dependencies: ["truncate.swift"]),
+    ]
 )

@@ -7,9 +7,18 @@
 //
 
 import XCTest
-@testable import Truncate
+@testable import truncate_swift
 
 class TruncateTests: XCTestCase {
+  
+    static var allTests = [
+        ("testDegenerateCases", testDegenerateCases),
+        ("testTruncateDefault", testTruncateDefault),
+        ("testTruncateLeft", testTruncateLeft),
+        ("testTruncateWithIndicatorDefaultSide", testTruncateWithIndicatorDefaultSide),
+        ("testLeftTruncateWithIndicator", testLeftTruncateWithIndicator),
+        ("testRightTruncateWithIndicator", testRightTruncateWithIndicator),
+    ]
 
     func testDegenerateCases() {
         let string = "abcdefg"
